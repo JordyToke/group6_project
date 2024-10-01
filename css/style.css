@@ -3,22 +3,32 @@
 
 /* PLEASE EDIT ALL ELEMENT STYLE BELOW */
 
+body {
+  background-color: var(--bg-color);
+}
 
 /* styling of the nav bar */
 nav {
   position: sticky;
   top: 0px;
   width: 100vw;
+  background-color: var(--bg-light-acc1);
   ul {
       list-style: none;
       display: flex;
       justify-content: stretch;
+      padding: 0;
       li {
         text-align: center;
         flex: 1;
         a {
           /* nav bar link styling */
-
+          display: block;
+          color: ;
+          transition: all 150ms ease-in;
+          &:hover {
+            background-color: var(--bg-dark-acc1);
+          }
         }
       }
     }

@@ -1,24 +1,30 @@
-:root {
-  /* style set up for light dark themes  */
-  box-sizing: border-box;
-  color-scheme: light dark;
-  --bg-color: #222;
-  --text-color: #888;
-}
-
 body {
   /* removes default browser margin */
   width: 100%;
   margin: 0px;
 }
 
-@media (prefers-color-scheme: light) {
-  /* light mode styles */
-
-  
+:root {
+  /* default styles (not color)  */
+  box-sizing: border-box;
+  color-scheme: dark light;
 }
 
 @media (prefers-color-scheme: dark) {
   /* dark mode styles */
-  
+  :root {
+    --bg-color: #202025;
+    --bg-light-acc1: #252530;
+    --bg-dark-acc1: #101015;
+    --text-color: #888;
+    --link-color: #9e9eff;
+  }
+
+}
+@media (prefers-color-scheme: light) {
+  /* light mode styles */
+  :root {
+    --bg-color: #eee;
+    --text-color: #000;
+  }
 }
