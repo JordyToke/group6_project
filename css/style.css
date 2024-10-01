@@ -1,9 +1,30 @@
 :root {
-  /* base styling rules  */
+  /* style set up for light dark themes  */
+  color-scheme: light dark;
+  --bg-color: #222;
+  --text-color: #888;
+}
 
+@media (prefers-color-scheme: light) {
+  /* light mode styles */
+
+  
 }
 
 @media (prefers-color-scheme: dark) {
-  /* dark mode styling */
+  /* dark mode styles */
   
 }
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: stretch;
+    justify-items: center;
+    align-items: center;
+    li {
+      flex: 1;
+    }
+  }
+} 
