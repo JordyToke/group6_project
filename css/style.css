@@ -1,5 +1,5 @@
 /* IMPORTS */
-@import url('base.css'); 
+@import url("base.css");
 
 /* PLEASE EDIT ALL ELEMENT STYLE BELOW */
 
@@ -14,26 +14,30 @@ nav {
   width: 100vw;
   background-color: var(--bg-light-acc1);
   ul {
-      list-style: none;
-      display: flex;
-      justify-content: stretch;
-      padding: 0;
-      li {
-        text-align: center;
-        flex: 1;
-        a {
-          /* nav bar link styling */
-          display: block;
-          color: ;
-          transition: all 150ms ease-in;
-          &:hover {
-            background-color: var(--bg-dark-acc1);
-          }
-        }
-      }
-    }
-  }
-} 
+    list-style: none;
+    display: flex;
+    justify-content: stretch;
+    padding: 0;
+    li {
+      text-align: center;
+      flex: 1;
+      a {
+        /* nav bar link styling */
+        display: block;
+        color: var(--link-color);
+        transition: all 150ms ease-in;
+        &:hover {
+          background-color: var(--bg-dark-acc1);
+        };
+      };
+    };
+  };
+}
+
+
+.tall {
+  height: 2000px;
+}
 
 footer {
   margin: 0 auto;
