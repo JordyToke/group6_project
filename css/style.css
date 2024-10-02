@@ -7,17 +7,39 @@ body {
   background-color: var(--bg-color);
 }
 
+/* styling of the Header */
+header {
+  border: 1px solid black;
+  height: 100px;
+  background-color: grey;
+}
+/* Need to use block to make a counter appear in top right */
+.cartButton {
+  height: 80%;
+  margin-left: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.counter {
+  background-color: red;
+  color: white;
+}
+
 /* styling of the nav bar */
 nav {
   position: sticky;
   top: 0px;
-  width: 100vw;
+  width: 100%;
   background-color: var(--bg-light-acc1);
+  padding: 0px;
+  margin: 0px;
+  z-index: 2;
   ul {
     list-style: none;
     display: flex;
     justify-content: stretch;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
     li {
       text-align: center;
       flex: 1;
@@ -37,6 +59,7 @@ nav {
 .tall {
   height: 2000px;
 }
+/* css for product listing */
 
 .product_listing {
   display: grid;
@@ -68,10 +91,6 @@ nav {
   margin-top: 15px;
 }
 
-footer {
-  margin: 0 auto;
-}
-
 @media only screen and (max-width: 600px) {
   .product_listing {
     grid-template-columns: 1fr 1fr;
@@ -83,4 +102,27 @@ footer {
   .product h2 {
     font-size: 1rem;
   }
+}
+/* End for product listing */
+
+/* css for footer */
+footer {
+  margin: 0 auto;
+  background-color: grey;
+  border: 1px solid black;
+  height: 150px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 50px;
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 20%;
+  grid-column: auto;
 }
