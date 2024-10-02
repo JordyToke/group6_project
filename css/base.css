@@ -8,6 +8,7 @@ body {
   /* default styles (not color)  */
   box-sizing: border-box;
   color-scheme: dark light;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 @media (prefers-color-scheme: dark) {
