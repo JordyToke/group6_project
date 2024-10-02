@@ -119,6 +119,8 @@ nav {
   }
 }
 /* End for product listing */
+
+/* shoppingCart styling */
 .productv2 {
   position: relative;
   display: flex;
@@ -127,12 +129,13 @@ nav {
   justify-content: center;
   text-align: center;
   align-content: space-between;
-  background-color: var(--bg-light-acc1);
+  /* background-color: var(--bg-light-acc1); */
   /* height: 300px;
   width: 200px; */
-  box-shadow: 0 0 8px 0 var(--bg-dark-acc1);
+  /* box-shadow: 0 0 8px 0 var(--bg-dark-acc1); */
   /* product card hover styling */
   transition: all 100ms ease-out;
+  /* clicking in product card should take user to product page */
   z-index: 0;
   &:hover {
     transform: scale(105%);
@@ -140,10 +143,14 @@ nav {
   }
 }
 
-.product * {
+.productv2 * {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.productv2 p {
+  font-weight: 600;
 }
 
 .image {
@@ -157,13 +164,23 @@ nav {
 }
 
 .addCart {
-  height: 2rem;
-  border: 0;
-  background-color: var(--bg-color);
+  position: absolute;
+  right: 1rem;
+  height: 3rem;
+  width: 3rem;
+  border: 2px;
+  border-radius: 50%;
+  background-color: transparent;
+  background-image: url('../images/cart-cross.svg');
+  background-size: 2.2rem 2.2rem;
+  background-position: 0.4rem 0.4rem;
+  background-repeat: no-repeat;
+  backgo
   &:hover {
-    background-color: var(--bg-dark-acc1);
+    background-color: var(--bg-dark-acc2);
   }
 }
+
 /* Styling of the footer */
 footer {
   margin: 0 auto;
@@ -185,17 +202,3 @@ footer {
   margin-left: 20%;
   grid-column: auto;
 }
-
-.grid-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 10px;
-  column-gap: 50px;
-  height: 300px;
-  width: 300px;
-  padding: 10px;
-  font-size: 20px;
-  margin-left: 20%;
-  grid-column: auto;
-} 
