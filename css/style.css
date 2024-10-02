@@ -7,6 +7,25 @@ body {
   background-color: var(--bg-color);
 }
 
+/* styling of the Header */
+header {
+  border: 1px solid black;
+  height: 100px;
+  background-color: grey;
+}
+ /* Need to use block to make a counter appear in top right */
+.cartButton {
+  height: 80%;
+  margin-left: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.counter {
+  background-color: red;
+  color: white;
+
+}
+
 /* styling of the nav bar */
 nav {
   position: sticky;
@@ -35,6 +54,11 @@ nav {
       };
     };
   };
+}
+
+
+.tall {
+  height: 1000px;
 }
 
 
@@ -79,6 +103,24 @@ nav {
   text-align: end;
 }
 
+/* Styling of the footer */
 footer {
   margin: 0 auto;
+  background-color: grey;
+  border: 1px solid black;
+  height: 150px;
 }
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 50px;
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 20%;
+  grid-column: auto;
+} 
