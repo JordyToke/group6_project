@@ -11,13 +11,16 @@ body {
 nav {
   position: sticky;
   top: 0px;
-  width: 100vw;
+  width: 100%;
   background-color: var(--bg-light-acc1);
+  padding: 0px;
+  margin: 0px;
   ul {
     list-style: none;
     display: flex;
     justify-content: stretch;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
     li {
       text-align: center;
       flex: 1;
@@ -35,8 +38,45 @@ nav {
 }
 
 
-.tall {
+.products {
   height: 2000px;
+}
+
+.cart {
+  margin: 20px auto;
+  width: 80vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: baseline;
+}
+
+.product {
+  background-color: var(--bg-light-acc1);
+  height: 300px;
+  width: 200px;
+  margin: 8px;
+  padding: 8px;
+  justify-content: center;
+}
+
+.product .image {
+  display: block;
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+}
+
+.product .title {
+  text-align: center;
+}
+.product .price {
+  display: inline;
+  text-align: center;
+}
+
+.product button {
+  display: inline;
+  text-align: end;
 }
 
 footer {
