@@ -65,45 +65,53 @@ nav {
   margin: 16px auto;
   width: 80%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  grid-auto-rows: 320px;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-auto-rows: max-content;
   grid-auto-flow: row;
   justify-items: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 
 .product {
   position: relative;
   display: flex;
+  height: auto;
   flex-flow: row wrap;
   justify-content: center;
   text-align: center;
+  align-content: space-between;
   background-color: var(--bg-light-acc1);
   /* height: 300px;
   width: 200px; */
   box-shadow: 0 0 8px 0 var(--bg-dark-acc1);
   /* product card hover styling */
   transition: all 100ms ease-out;
+  z-index: 0;
   &:hover {
     transform: scale(105%);
     z-index: 1;
   }
 }
 
-.product .image {
+.product * {
   display: block;
   width: 100%;
-  height: 100px;
+  height: auto;
+}
+
+.image {
   object-fit: contain;
+  /* product image hover styling */
+  /* transition: all 100ms ease-out;
+  &:hover {
+    transform: scale(120%);
+    z-index: 1;
+  } */
 }
 
 .addCart {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 32px;
+  height: 2rem;
   border: 0;
-  bottom: 0px;
   background-color: var(--bg-color);
   &:hover {
     background-color: var(--bg-dark-acc1);
