@@ -13,18 +13,44 @@ header {
   height: 100px;
   background-color: grey;
 }
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
  /* Need to use block to make a counter appear in top right */
 .cartButton {
-  height: 80%;
-  margin-left: 90%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 10%;
+  position: relative;
+  height: 90%;
+  vertical-align: center;
+  align-content: right;
+  float: right;
 }
-.counter {
+.badge {
   background-color: red;
   color: white;
-
+  display: inline-block;
+  align-self: right;
+  vertical-align: top;
+  position: absolute;
+  top: -10px;
+  right:-10px;
 }
+
+.cartButton .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
 
 /* styling of the nav bar */
 nav {
@@ -34,6 +60,7 @@ nav {
   background-color: var(--bg-light-acc1);
   padding: 0px;
   margin: 0px;
+  background-color: grey;
   ul {
     list-style: none;
     display: flex;
@@ -49,7 +76,7 @@ nav {
         color: var(--link-color);
         transition: all 150ms ease-in;
         &:hover {
-          background-color: var(--bg-dark-acc1);
+          background-color: greenyellow;
         };
       };
     };
@@ -58,7 +85,7 @@ nav {
 
 
 .tall {
-  height: 1000px;
+  height: 2000px;
 }
 
 
@@ -105,22 +132,22 @@ nav {
 
 /* Styling of the footer */
 footer {
-  margin: 0 auto;
+  margin-bottom: 0px;
   background-color: grey;
   border: 1px solid black;
   height: 150px;
+  width: 100%;
 }
 
-.grid-container{
+.footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 10px;
   column-gap: 50px;
-  height: 300px;
-  width: 300px;
-  padding: 10px;
+  width: 90%;
   font-size: 20px;
   margin-left: 20%;
+  margin-right:20%;
   grid-column: auto;
 } 
