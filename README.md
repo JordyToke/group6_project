@@ -17,6 +17,11 @@
 
 ## Task Breakdown
 
+Pallavi - main product list
+Teagan - nav bar and header and footer
+Jordy - shopping list
+
+
 ## License
 
 [:arrow_up: Back to Top](#wd13--group-6-html-css-project)
