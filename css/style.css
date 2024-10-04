@@ -3,6 +3,16 @@
 
 /* PLEASE EDIT ALL ELEMENT STYLE BELOW */
 
+:root {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+* {
+  margin: 0px;
+    padding: 0px;
+}
+
 body {
   background-color: var(--bg-color);
 }
@@ -14,29 +24,58 @@ header {
   background-color: grey;
 }
 
+
+.logo {
+  height: 7rem;
+  width: 7rem;
+}
  /* Need to use block to make a counter appear in top right */
 
 .cartButton {
-  height: 80%;
-  margin-left: 90%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 10%;
+  position: relative;
+  height: 90%;
+  vertical-align: center;
+  align-content: right;
+  float: right;
 }
-.counter {
+.badge {
   background-color: red;
   color: white;
-
-
+  display: inline-block;
+  align-self: right;
+  vertical-align: top;
+  position: absolute;
+  top: -10px;
+  right:-10px;
 }
 
+
+.cartButton .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+
 /* styling of the nav bar */
+  /* To do later: make a short sticky header-nav */
 nav {
   position: sticky;
   top: 0px;
-  width: 100%;
+  width: 60%;
   background-color: var(--bg-light-acc1);
   padding: 0px;
-  margin: 0px;
+  margin-left: 25%;
+  background-color: grey;
+  vertical-align: center;
+  align-content: right;
   z-index: 2;
   ul {
     list-style: none;
@@ -53,6 +92,8 @@ nav {
         color: var(--link-color);
         transition: all 150ms ease-in;
         &:hover {
+          /*      ADD TEAGANS STYLING TO BASE.CSS      */
+/*           background-color: greenyellow; */
           background-color: var(--bg-dark-acc1);
         }
       }
@@ -60,6 +101,15 @@ nav {
   }
 }
 /* css for product listing */
+
+.menus {
+  float: right;
+}
+
+
+.tall {
+  height: 2000px;
+}
 
 .product_listing {
   display: grid;
@@ -86,7 +136,6 @@ nav {
 .product .price {
   display: grid;
   grid-template-columns: 1fr 2fr;
-
   gap: 5px;
   margin-top: 15px;
 }
@@ -165,10 +214,24 @@ nav {
 
 /* Styling of the footer */
 footer {
-  margin: 0 auto;
+  display: inline-block;
+  
+  margin-bottom: 0px;
   background-color: grey;
   border: 1px solid black;
   height: 150px;
+  width: 100%;
+}
+
+.footerlogo {
+  height: 7rem;
+  width: 7rem; 
+  position: relative;
+  height: 90%;
+  vertical-align: center;
+  align-content: left;
+  float: left;
+  
 }
 
 .grid-container {
@@ -177,10 +240,10 @@ footer {
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 10px;
   column-gap: 50px;
-  height: 300px;
-  width: 300px;
-  padding: 10px;
+  width: 90%;
   font-size: 20px;
   margin-left: 20%;
+  margin-right:20%;
   grid-column: auto;
+  font-size: 0.75rem;
 }
