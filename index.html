@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Group 6 Home</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+    crossorigin="anonymous"
+  />
 </head>
-<body>
 
+<body>
   <!-- HEADER SECTION -->
+  <!-- TEAGAN - mimic Officeworks header styling? -->
   <header>
     <img src="images/GlarewearLogo.png" alt="Glare Wear logo image" class="logo">
     <!-- Nav bar start -->
@@ -29,18 +36,76 @@
       </ul>
     </nav>
     <!-- Nav bar end -->
+    <!--  TEAGAN - implementing a shopping cart icon as a button to the shoppingCart.html page  -->
     <button class="cartButton">Shopping Cart icon a href="cart.html"<span class="badge">5</span></button>
-    
-    
   </header>
 <!-- HEADER end -->
-  
-<main>
-    <div class="tall">
-      <p>I'm a paragraph</p>
-    </div>
-  </main>
 
+<!--  MAIN start  -->
+  <main>
+      <!-- Product Listing -->
+      <section class="product_listing">
+        <div class="product">
+          <a href="Productpage.html">
+            <h2>Ray-Ban</h2>
+            <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/c24bc218-e7ce-43c3-8614-a3590041718c/3562dae3-0471-40c6-8426-acfd004efa10/0RB2140F__901__STD__shad__qt.png?impolicy=SGH_bgtransparent&width=2048" alt=""/>
+          </a>
+          <div class="price">
+            <h2>$234</h2>
+            <button class="btn btn-info">Add to cart</button>
+          </div>
+        </div>
+        <div class="product">
+          <a href="Productpage.html"><h2>Burberry</h2>
+            <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/29c57dc6-af5a-4b05-814d-af3200b90cd4/0c7777af-edda-4328-9f12-af330072be49/0BE4392U__405587__P21__shad__qt.png?impolicy=SGH_bgtransparent&width=2048" alt="" />
+          </a>
+          <div class="price">
+            <h2>$380</h2>
+            <button class="btn btn-info">Add to cart</button>
+          </div>
+        </div>
+        <div class="product">
+          <a href="Productpage.html"><h2>Oakley</h2>
+            <img
+              src="https://assets2.sunglasshut.com/cdn-record-files-pi/9b2713a0-1892-4f16-88af-ae7d0115f2cb/3210c166-8fda-4db7-ba19-ae7d016e2a4f/0OO9229__922901__P21__shad__qt.png?impolicy=SGH_bgtransparent&width=2048" alt="" />
+          </a>
+          <div class="price">
+            <h2>$193</h2>
+            <button class="btn btn-info">Add to cart</button>
+          </div>
+        </div>
+        <div class="product">
+          <a href="Productpage.html"><h2>Dolce&Gabbana</h2>
+            <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/a60d17d4-6425-4585-b0ac-b0110164ac90/94805f11-ac22-4d53-8ffa-b0110164afb3/0DG4451__705_9A__P21__shad__qt.png?impolicy=SGH_bgtransparent&width=2048" alt="" />
+          </a>
+          <div class="price">
+            <h2>$519</h2>
+            <button class="btn btn-info">Add to cart</button>
+          </div>
+        </div>
+        <div class="product">
+          <a href="Productpage.html"><h2>Gucci</h2>
+            <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/627dc1ba-9b0f-44e7-af12-b117013d29a8/0a574d3e-b767-41d9-aa19-b1490012e923/0GC002199__1100L1_000A.png?impolicy=SGH_bgtransparent&width=1024" alt="" />
+          </a>
+          <div class="price">
+            <h2>$780</h2>
+            <button class="btn btn-info">Add to cart</button>
+          </div>
+        </div>
+        <div class="product">
+          <a href="Productpage.html"><h2>Tiffany & Co.</h2>
+            <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/f242c483-5c24-4d7d-94e6-b006009cc8d3/56cd69fe-7f12-4cc4-b8c6-b00600acf7e7/0TF3094__6198T3__P21__shad__qt.png?impolicy=SGH_bgtransparent&width=2048" alt="" />
+          </a>
+          <div class="price">
+            <h2>$621</h2>
+            <button class="btn btn-info">Add to cart</button>
+          </div>
+        </div>
+      </section>
+      <!-- End of product listing -->
+    
+    </main>
+    <!--  MAIN end  -->
   <!-- FOOTER START -->
   <footer>
     <img src="images/GlarewearLogo.png" alt="Glare Wear logo image" class="footerlogo"/>
