@@ -3,6 +3,16 @@
 
 /* PLEASE EDIT ALL ELEMENT STYLE BELOW */
 
+:root {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+* {
+  margin: 0px;
+    padding: 0px;
+}
+
 body {
   background-color: var(--bg-color);
 }
@@ -15,8 +25,8 @@ header {
 }
 
 .logo {
-  height: 100px;
-  width: 100px;
+  height: 7rem;
+  width: 7rem;
 }
 
  /* Need to use block to make a counter appear in top right */
@@ -53,14 +63,17 @@ header {
 
 
 /* styling of the nav bar */
+  /* To do later: make a short sticky header-nav */
 nav {
   position: sticky;
   top: 0px;
-  width: 100%;
+  width: 60%;
   background-color: var(--bg-light-acc1);
   padding: 0px;
-  margin: 0px;
+  margin-left: 25%;
   background-color: grey;
+  vertical-align: center;
+  align-content: right;
   ul {
     list-style: none;
     display: flex;
@@ -83,6 +96,10 @@ nav {
   };
 }
 
+.menus {
+  float: right;
+}
+
 
 .tall {
   height: 2000px;
@@ -101,6 +118,7 @@ nav {
   align-content: baseline;
 }
 
+ 
 .product {
   background-color: var(--bg-light-acc1);
   height: 300px;
@@ -132,11 +150,24 @@ nav {
 
 /* Styling of the footer */
 footer {
+  display: inline-block;
+  
   margin-bottom: 0px;
   background-color: grey;
   border: 1px solid black;
   height: 150px;
   width: 100%;
+}
+
+.footerlogo {
+  height: 7rem;
+  width: 7rem; 
+  position: relative;
+  height: 90%;
+  vertical-align: center;
+  align-content: left;
+  float: left;
+  
 }
 
 .footer {
@@ -150,4 +181,5 @@ footer {
   margin-left: 20%;
   margin-right:20%;
   grid-column: auto;
+  font-size: 0.75rem;
 } 
