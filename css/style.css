@@ -19,27 +19,90 @@ body {
 
 /* styling of the Header */
 header {
+  display: flex;
   border: 1px solid black;
+  /* want it to be a % of page, but doesnt work if not pixels ?????? */
   height: 100px;
+  width: 100%;
   background-color: grey;
+    img {
+      height: 100%;
+      width: auto;
+    }
 }
-
 
 .logo {
-  height: 7rem;
-  width: 7rem;
+  height: 100%;
+  width: auto;
 }
- /* Need to use block to make a counter appear in top right */
 
-.cartButton {
-  display: inline-block;
+
+/* styling of the nav bar */
+  /* To do later: make a short sticky header-nav */
+nav {
+  position: flex;
+  display: block;
+  /* delete below border */
   border: 1px solid black;
-  border-radius: 10%;
-  position: relative;
-  height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0px;
+  width: 60%;
+  background-color: var(--bg-light-acc1);
+  padding-right: 0%;
+  /* decide which margin needed */
+  margin-left: 25%;
+  background-color: grey;
   vertical-align: center;
   align-content: right;
-  float: right;
+  z-index: 2;
+   
+  ul {
+    font-size: 1.5rem;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    position: center;
+    justify-content: space-between;
+    padding: auto;
+    li {
+      text-align: center;
+      flex: 1;
+      .aa {
+        /* nav bar link styling */
+        display: flex;
+        justify-content: space-between;
+        color: var(--link-color);
+        transition: all 150ms ease-in;
+        &:hover {
+          /*      ADD TEAGANS STYLING TO BASE.CSS      */
+/*           background-color: greenyellow; */
+          background-color: var(--bg-dark-acc1);
+        }
+      }
+    }
+  }
+  
+}
+
+ /* Need to use block to make a counter appear in top right */
+
+ .cartButton {
+  display: inline-block;
+  justify-content: space-between;
+  border: 2px solid black;
+  border-radius: 10%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 0.5%;
+  position: relative;
+  flex: right;
+  height: 10%;
+  width: 10%;
+  vertical-align: middle;
+  align-content: right;
+  float: none;
+  background-color: rgb(255, 243, 139);
 }
 .badge {
   background-color: red;
@@ -55,51 +118,16 @@ header {
 
 .cartButton .badge {
   position: absolute;
+
   top: -10px;
   right: -10px;
-  padding: 5px 10px;
   border-radius: 50%;
   background: red;
   color: white;
 }
 
 
-/* styling of the nav bar */
-  /* To do later: make a short sticky header-nav */
-nav {
-  position: sticky;
-  top: 0px;
-  width: 60%;
-  background-color: var(--bg-light-acc1);
-  padding: 0px;
-  margin-left: 25%;
-  background-color: grey;
-  vertical-align: center;
-  align-content: right;
-  z-index: 2;
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: stretch;
-    padding: 0px;
-    margin: 0px;
-    li {
-      text-align: center;
-      flex: 1;
-      a {
-        /* nav bar link styling */
-        display: block;
-        color: var(--link-color);
-        transition: all 150ms ease-in;
-        &:hover {
-          /*      ADD TEAGANS STYLING TO BASE.CSS      */
-/*           background-color: greenyellow; */
-          background-color: var(--bg-dark-acc1);
-        }
-      }
-    }
-  }
-}
+
 /* css for product listing */
 
 .menus {
@@ -221,15 +249,16 @@ footer {
   border: 1px solid black;
   height: 150px;
   width: 100%;
+  
 }
 
 .footerlogo {
-  height: 7rem;
-  width: 7rem; 
+  display:block;
+  height: 95%;
+  width: auto; 
   position: relative;
   height: 90%;
   vertical-align: center;
-  align-content: left;
   float: left;
   
 }
@@ -245,5 +274,11 @@ footer {
   margin-left: 20%;
   margin-right:20%;
   grid-column: auto;
-  font-size: 0.75rem;
+  font-size: 1 rem;
+}
+
+small {
+  display: block;
+  float: right;
+  position: fixed;
 }
