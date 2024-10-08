@@ -20,89 +20,48 @@ body {
 /* styling of the Header */
 header {
   display: flex;
-  border: 1px solid black;
-  /* want it to be a % of page, but doesnt work if not pixels ?????? */
-  height: 100px;
+  justify-content: space-between;
+  flex-direction: row;
   width: 100%;
   background-color: grey;
-    img {
-      height: 100%;
-      width: auto;
-    }
 }
 
-.logo {
-  height: 100%;
-  width: auto;
-}
-
-
-/* styling of the nav bar */
-  /* To do later: make a short sticky header-nav */
-nav {
-  position: flex;
-  display: block;
-  /* delete below border */
-  border: 1px solid black;
-  margin-left: auto;
-  margin-right: auto;
-  top: 0px;
-  width: 60%;
-  background-color: var(--bg-light-acc1);
-  padding-right: 0%;
-  /* decide which margin needed */
-  margin-left: 25%;
-  background-color: grey;
-  vertical-align: center;
-  align-content: right;
-  z-index: 2;
-   
-  ul {
-    font-size: 1.5rem;
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    position: center;
-    justify-content: space-between;
-    padding: auto;
-    li {
-      text-align: center;
-      flex: 1;
-      .aa {
-        /* nav bar link styling */
-        display: flex;
-        justify-content: space-between;
-        color: var(--link-color);
-        transition: all 150ms ease-in;
-        &:hover {
-          /*      ADD TEAGANS STYLING TO BASE.CSS      */
-/*           background-color: greenyellow; */
-          background-color: var(--bg-dark-acc1);
-        }
-      }
-    }
-  }
-  
-}
 
  /* Need to use block to make a counter appear in top right */
 
- .cartButton {
-  display: inline-block;
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  align-content: space-between;
   justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0px;
+}
+.logo {
+  height: 140px;
+  width: 140px;
+}
+
+ .cartButton {
+  display: block;
+  height: 60px;
+  width: 60px;
   border: 2px solid black;
-  border-radius: 10%;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  margin-right: 0.5%;
+  margin-top: 1em;
+  margin-right: 1em;
   position: relative;
-  flex: right;
-  height: 10%;
-  width: 10%;
+  /* flex: right;
   vertical-align: middle;
   align-content: right;
-  float: none;
+  float: none; */
   background-color: rgb(255, 243, 139);
+    img {
+      height: 60px;
+      width: 60px;
+    }
 }
 .badge {
   background-color: red;
@@ -111,14 +70,12 @@ nav {
   align-self: right;
   vertical-align: top;
   position: absolute;
-  top: -10px;
-  right:-10px;
+  top: -15px;
+  right:-15px;
 }
-
 
 .cartButton .badge {
   position: absolute;
-
   top: -10px;
   right: -10px;
   border-radius: 50%;
@@ -126,7 +83,41 @@ nav {
   color: white;
 }
 
-
+/* styling of the nav bar */
+  /* To do later: make a short sticky header-nav */
+  nav {
+    position: flex;
+    /* delete below border */
+    width: 100%;
+    background-color: var(--bg-light-acc1);
+    /* decide which margin needed */
+    background-color: grey;
+    z-index: 2;
+     
+    ul {
+      font-size: 1.5rem;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 0px;
+      margin: 0;
+      li {
+        flex: 1;
+        a {
+          /* nav bar link styling */
+          text-decoration: none;
+          color: var(--link-color);
+          transition: all 150ms ease-in;
+          &:hover {
+            /*      ADD TEAGANS STYLING TO BASE.CSS      */
+  /*           background-color: greenyellow; */
+            background-color: var(--bg-dark-acc1);
+          }
+        }
+      }
+    }
+    
+  }
 
 /* css for product listing */
 
@@ -243,7 +234,7 @@ nav {
 /* Styling of the footer */
 footer {
   display: inline-block;
-  
+  vertical-align: center;
   margin-bottom: 0px;
   background-color: grey;
   border: 1px solid black;
@@ -253,7 +244,7 @@ footer {
 }
 
 .footerlogo {
-  display:block;
+  display: block;
   height: 95%;
   width: auto; 
   position: relative;
@@ -275,6 +266,7 @@ footer {
   margin-right:20%;
   grid-column: auto;
   font-size: 1 rem;
+  vertical-align: center;
 }
 
 small {
