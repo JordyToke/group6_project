@@ -40,19 +40,35 @@ header div {
   margin: 0;
   padding: 0px;
 }
-.logo {
+div .logo {
   height: 140px;
   width: 140px;
+  align-items: flex-start;
+}
+
+.searchBar{
+  display: flex;
+  flex-direction: column;
+  height: 6vh;
+  width: 60%;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 15px;
+  align-items: center;
+  vertical-align: center;
+  margin-top: 10px;
 }
 
  .cartButton {
   display: block;
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 100px;
   border: 2px solid black;
+  border-radius: 20px;
   margin-top: 1em;
   margin-right: 1em;
   position: relative;
+  align-items: flex-end;
   /* flex: right;
   vertical-align: middle;
   align-content: right;
@@ -238,8 +254,9 @@ footer {
   margin-bottom: 0px;
   background-color: grey;
   border: 1px solid black;
-  height: 150px;
+  height: 190px;
   width: 100%;
+  padding-top: 20px;
   
 }
 
@@ -260,13 +277,31 @@ footer {
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 10px;
   column-gap: 50px;
-  width: 90%;
-  font-size: 20px;
+  width: 80%;
   margin-left: 20%;
   margin-right:20%;
   grid-column: auto;
-  font-size: 1 rem;
   vertical-align: center;
+}
+
+.footer a {
+  font-size: 1 rem;
+  text-decoration: none;
+  color: black;
+
+}
+
+.socials{
+  display: grid;
+  border: 1px solid black;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 20%;
+  align-items: center;
+}
+
+.socialLogos {
+  height: 50px;
+  width: 50px;
 }
 
 small {
