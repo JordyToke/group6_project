@@ -130,6 +130,11 @@ header div {
   height: 2000px;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .product_listing {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
