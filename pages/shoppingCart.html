@@ -31,49 +31,71 @@
 
   <!-- Main START -->
   <main>
-    <h2>Shopping Cart</h2>
-    <section class="products cart">
-      <article class="productv2">
+    <section class="products cart-list">
+      
+      <article class="cart-item">
+        <!-- remove item from cart button -->
+        <input type="button" value="x">
         <!-- product image -->
-        <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/314110e0-ff5e-41b4-8c69-a68c0061fcc7/d399f631-de51-479c-ad13-ad7a00451553/0OO9102__9102D6__P21__shad__fr.png" alt="Black Oakley Holbrook" class=" image">
+        <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/314110e0-ff5e-41b4-8c69-a68c0061fcc7/d399f631-de51-479c-ad13-ad7a00451553/0OO9102__9102D6__P21__shad__fr.png" alt="Black Oakley Holbrook" class="product-image">
         <!-- product description -->
-        <h4 class="title">Oakley Holbrook <br /> Sunglasses</h4>
+        <h4 class="product-name">Oakley Holbrook Sunglasses</h4>
+        <!-- product-amount input will be fully implemented later (javascript) -->
+        <input type="button" value="+">
+        <input title="amount" type="number" name="${product-name}-amount" id="" value="1" min="1">
+        <input type="button" value="-">
+        <!-- price will be implemented with JS to multiply product value by amount -->
         <p class="price">$150</p>
       </article>
-      <article class="productv2">
-        <!-- product image -->
-        <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/648a968b-a0f3-4629-ae7b-a824017def6d/43128f74-e28b-46a7-8015-adc501090943/0RB4260D__601_9A__STD__noshad__fr.png" alt="Ray-Ban RB4260D Green Polarised" class=" image">
-        <!-- product description -->
-        <h4 class="title">Ray-Ban <br> Green Polarised</h4>
+
+      <article class="cart-item">
+        <!-- remove item from cart button -->
+        <input type="button" value="x">
+        <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/648a968b-a0f3-4629-ae7b-a824017def6d/43128f74-e28b-46a7-8015-adc501090943/0RB4260D__601_9A__STD__noshad__fr.png" alt="Ray-Ban RB4260D Green Polarised" class="product-image">
+        <h4 class="product-name">Ray-Ban Green Polarised</h4>
+         <!-- product-amount input will be fully implemented later (javascript) -->
+         <input type="button" value="+">
+         <input title="amount" type="number" name="${product-name}-amount" id="" value="1" min="1">
+         <input type="button" value="-">
         <p class="price">$165</p>
       </article>
-      <article class="productv2">
-        <!-- product image -->
-        <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/2cccde7f-3530-4ea1-8fde-a35801356c06/79f7c00f-9290-40b8-859a-ad330149597b/0RB3016__901_58__STD__shad__qt.png" alt="Ray-Ban RB3016 Clubmaster Classic" class=" image">
-        <!-- product description -->
-        <h4 class="title">Ray-Ban <br> Clubmaster Classic</h4>
+      <article class="cart-item">
+        <!-- remove item from cart button -->
+        <input type="button" value="x">
+        <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/2cccde7f-3530-4ea1-8fde-a35801356c06/79f7c00f-9290-40b8-859a-ad330149597b/0RB3016__901_58__STD__shad__qt.png" alt="Ray-Ban RB3016 Clubmaster Classic" class="product-image">
+        <h4 class="product-name">Ray-Ban Clubmaster Classic</h4>
+         <!-- product-amount input will be fully implemented later (javascript) -->
+         <input type="button" value="+">
+         <input title="amount" type="number" name="${product-name}-amount" id="" value="1" min="1">
+         <input type="button" value="-">
         <p class="price">$187</p>
       </article>
-      <article class="productv2">
-        <!-- product image -->
-        <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/f2a2b356-cf47-4e4c-bd0e-a35900057b03/d50aff28-bfb5-44a3-bce5-ad1b007c1ac5/0RB3025__L0205__STD__shad__fr.png" alt="Ray-Ban RB3025 Aviator Classic" class=" image">
-        <!-- product description -->
-        <h4 class="title">Ray-Ban <br> Aviator Classic</h4>
+      <article class="cart-item">
+        <!-- remove item from cart button -->
+        <input type="button" value="x">
+        <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/f2a2b356-cf47-4e4c-bd0e-a35900057b03/d50aff28-bfb5-44a3-bce5-ad1b007c1ac5/0RB3025__L0205__STD__shad__fr.png" alt="Ray-Ban RB3025 Aviator Classic" class="product-image">
+        <h4 class="product-name">Ray-Ban Aviator Classic</h4>
+         <!-- product-amount input will be fully implemented later (javascript) -->
+         <input type="button" value="+">
+         <input title="amount" type="number" name="${product-name}-amount" id="" value="1" min="1">
+         <input type="button" value="-">
         <p class="price">$234</p>
-        <svg class="addCart" xmlns="http://www.w3.org/2000/svg">
-          <use href="../images/cart-cross.svg#xCart"/>
-        </svg>
       </article>
-      <article class="productv2">
-        <!-- product image -->
-        <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/65506467-52cd-4590-a01e-ae9b009dd9c8/8b2bbf07-624b-414f-8092-ae9b00a9cf81/0VE4437U__108_73__P21__shad__qt.png" alt="Versace VE4437U" class=" image">
-        <!-- product description -->
-        <h4 class="title">Versace</h4>
+      <article class="cart-item">
+        <!-- remove item from cart button -->
+        <input type="button" value="x">
+        <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/65506467-52cd-4590-a01e-ae9b009dd9c8/8b2bbf07-624b-414f-8092-ae9b00a9cf81/0VE4437U__108_73__P21__shad__qt.png" alt="Versace VE4437U" class="product-image">
+        <h4 class="product-name">Versace</h4>
+         <!-- product-amount input will be fully implemented later (javascript) -->
+         <input type="button" value="+">
+         <input title="amount" type="number" name="${product-name}-amount" id="" value="1" min="1">
+         <input type="button" value="-">
         <p class="price">$285</p>
-        <svg class="addCart" xmlns="http://www.w3.org/2000/svg">
-          <use href="../images/cart-cross.svg#xCart"/>
-        </svg>
       </article>
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <span>$1021</span>
+      </div>
     </section>
   </main>
   <!-- Main END -->

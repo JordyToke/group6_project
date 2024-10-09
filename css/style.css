@@ -143,9 +143,6 @@ header div {
   padding: 20px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 }
-.product img {
-  width: 100%;
-}
 
 .product a {
   text-decoration: none;
@@ -179,7 +176,7 @@ header div {
   min-height: 1000px;
 }
 
-.cart {
+.cart-grid {
   margin: 16px auto;
   width: 80%;
   display: grid;
@@ -190,7 +187,55 @@ header div {
   gap: 1rem;
 }
 
-.productv2 {
+.cart-list {
+  width: 38vw;
+  background-color: grey;
+  float: right;
+  display: grid;
+  grid-auto-rows: 4em;
+  gap: 2em;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.cart-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 8em 8em repeat(3, 1fr) 2fr;
+  align-items: center;
+  gap: 0.5em;
+  height: 4em;
+  padding: 0 1em;
+  input {
+    cursor: pointer;
+    flex-shrink: 0;
+    appearance: none;
+    font-size: small;
+    height: 20px;
+    width: 20px;
+    border: 0;
+    line-height: 1;
+    outline: 0;
+    background: none;
+    text-align: center;
+    &[type=button] {
+      background-color: var(--bg-light-acc1);
+      border-radius: 50%;
+    }
+  }
+}
+
+.cart-total {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 1em;
+  text-align: right;
+}
+
+.product-grid {
   position: relative;
   display: flex;
   height: auto;
@@ -212,13 +257,13 @@ header div {
   }
 }
 
-.productv2 * {
+.product-grid * {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.productv2 p {
+.product-grid p {
   font-weight: 600;
 }
 
