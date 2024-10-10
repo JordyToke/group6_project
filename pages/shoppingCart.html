@@ -5,27 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Group 6 Home</title>
     <link rel="stylesheet" href="../css/style.css" />
-      <!-- import Bootstrap -->
-      <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
+    <!-- import Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
   </head>
   <body>
     <!-- HEADER START (to mimic officeworks) -->
     <header>
       <div>
-        <img
-          src="../images/GlarewearLogo.png"
-          alt="Glare Wear logo image"
-          class="logo"
-        />
+        <img src="../images/GlarewearLogo.png" alt="Glare Wear logo image" class="logo" />
       </div>
       <div>
         <!-- searchbar -->
-        <input class="searchBar" type="search" name="" id="">
+        <input class="searchBar" type="search" name="" id="" />
         <!-- Nav bar start -->
         <nav>
           <ul>
@@ -49,10 +40,7 @@
         <!-- SHopping cart button and badge -->
         <a href="pages/shoppingCart.html">
           <button type="button" class="cartButton">
-            <img
-              src="https://www.svgrepo.com/show/521847/shopping-cart.svg"
-              alt="Shopping Cart icon"
-            />
+            <img src="https://www.svgrepo.com/show/521847/shopping-cart.svg" alt="Shopping Cart icon" />
             <span class="badge">5</span>
           </button>
         </a>
@@ -69,23 +57,12 @@
             <!-- remove item from cart button -->
             <input type="button" value="x" />
             <!-- product image -->
-            <img
-              src="https://assets2.sunglasshut.com/cdn-record-files-pi/314110e0-ff5e-41b4-8c69-a68c0061fcc7/d399f631-de51-479c-ad13-ad7a00451553/0OO9102__9102D6__P21__shad__fr.png"
-              alt="Black Oakley Holbrook"
-              class="product-image"
-            />
+            <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/314110e0-ff5e-41b4-8c69-a68c0061fcc7/d399f631-de51-479c-ad13-ad7a00451553/0OO9102__9102D6__P21__shad__fr.png" alt="Black Oakley Holbrook" class="product-image" />
             <!-- product description -->
             <h4 class="product-name">Oakley Holbrook Sunglasses</h4>
             <!-- product-amount input will be fully implemented later (javascript) -->
             <input type="button" value="+" />
-            <input
-              title="amount"
-              type="number"
-              name="${product-name}-amount"
-              id=""
-              value="1"
-              min="1"
-            />
+            <input title="amount" type="number" name="${product-name}-amount" id="" value="1" min="1" />
             <input type="button" value="-" />
             <!-- price will be implemented with JS to multiply product value by amount -->
             <p class="price">$150</p>
@@ -94,88 +71,44 @@
           <article class="cart-item">
             <!-- remove item from cart button -->
             <input type="button" value="x" />
-            <img
-              src="https://assets2.sunglasshut.com/cdn-record-files-pi/648a968b-a0f3-4629-ae7b-a824017def6d/43128f74-e28b-46a7-8015-adc501090943/0RB4260D__601_9A__STD__noshad__fr.png"
-              alt="Ray-Ban RB4260D Green Polarised"
-              class="product-image"
-            />
+            <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/648a968b-a0f3-4629-ae7b-a824017def6d/43128f74-e28b-46a7-8015-adc501090943/0RB4260D__601_9A__STD__noshad__fr.png" alt="Ray-Ban RB4260D Green Polarised" class="product-image" />
             <h4 class="product-name">Ray-Ban Green Polarised</h4>
             <!-- product-amount input will be fully implemented later (javascript) -->
             <input type="button" value="+" />
-            <input
-              title="amount"
-              type="number"
-              name="${product-name}-amount"
-              id=""
-              value="1"
-              min="1"
-            />
+            <input title="amount" type="number" name="${product-name}-amount" id="" value="1" min="1" />
             <input type="button" value="-" />
             <p class="price">$165</p>
           </article>
           <article class="cart-item">
             <!-- remove item from cart button -->
             <input type="button" value="x" />
-            <img
-              src="https://assets2.sunglasshut.com/cdn-record-files-pi/2cccde7f-3530-4ea1-8fde-a35801356c06/79f7c00f-9290-40b8-859a-ad330149597b/0RB3016__901_58__STD__shad__qt.png"
-              alt="Ray-Ban RB3016 Clubmaster Classic"
-              class="product-image"
-            />
+            <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/2cccde7f-3530-4ea1-8fde-a35801356c06/79f7c00f-9290-40b8-859a-ad330149597b/0RB3016__901_58__STD__shad__qt.png" alt="Ray-Ban RB3016 Clubmaster Classic" class="product-image" />
             <h4 class="product-name">Ray-Ban Clubmaster Classic</h4>
             <!-- product-amount input will be fully implemented later (javascript) -->
             <input type="button" value="+" />
-            <input
-              title="amount"
-              type="number"
-              name="${product-name}-amount"
-              id=""
-              value="1"
-              min="1"
-            />
+            <input title="amount" type="number" name="${product-name}-amount" id="" value="1" min="1" />
             <input type="button" value="-" />
             <p class="price">$187</p>
           </article>
           <article class="cart-item">
             <!-- remove item from cart button -->
             <input type="button" value="x" />
-            <img
-              src="https://assets2.sunglasshut.com/cdn-record-files-pi/f2a2b356-cf47-4e4c-bd0e-a35900057b03/d50aff28-bfb5-44a3-bce5-ad1b007c1ac5/0RB3025__L0205__STD__shad__fr.png"
-              alt="Ray-Ban RB3025 Aviator Classic"
-              class="product-image"
-            />
+            <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/f2a2b356-cf47-4e4c-bd0e-a35900057b03/d50aff28-bfb5-44a3-bce5-ad1b007c1ac5/0RB3025__L0205__STD__shad__fr.png" alt="Ray-Ban RB3025 Aviator Classic" class="product-image" />
             <h4 class="product-name">Ray-Ban Aviator Classic</h4>
             <!-- product-amount input will be fully implemented later (javascript) -->
             <input type="button" value="+" />
-            <input
-              title="amount"
-              type="number"
-              name="${product-name}-amount"
-              id=""
-              value="1"
-              min="1"
-            />
+            <input title="amount" type="number" name="${product-name}-amount" id="" value="1" min="1" />
             <input type="button" value="-" />
             <p class="price">$234</p>
           </article>
           <article class="cart-item">
             <!-- remove item from cart button -->
             <input type="button" value="x" />
-            <img
-              src="https://assets2.sunglasshut.com/cdn-record-files-pi/65506467-52cd-4590-a01e-ae9b009dd9c8/8b2bbf07-624b-414f-8092-ae9b00a9cf81/0VE4437U__108_73__P21__shad__qt.png"
-              alt="Versace VE4437U"
-              class="product-image"
-            />
+            <img src="https://assets2.sunglasshut.com/cdn-record-files-pi/65506467-52cd-4590-a01e-ae9b009dd9c8/8b2bbf07-624b-414f-8092-ae9b00a9cf81/0VE4437U__108_73__P21__shad__qt.png" alt="Versace VE4437U" class="product-image" />
             <h4 class="product-name">Versace</h4>
             <!-- product-amount input will be fully implemented later (javascript) -->
             <input type="button" value="+" />
-            <input
-              title="amount"
-              type="number"
-              name="${product-name}-amount"
-              id=""
-              value="1"
-              min="1"
-            />
+            <input title="amount" type="number" name="${product-name}-amount" id="" value="1" min="1" />
             <input type="button" value="-" />
             <p class="price">$285</p>
           </article>
@@ -192,11 +125,7 @@
 
     <!-- FOOTER START -->
     <footer>
-      <img
-        src="../images/GlarewearLogo.png"
-        alt="Glare Wear logo image"
-        class="footerlogo"
-      />
+      <img src="../images/GlarewearLogo.png" alt="Glare Wear logo image" class="footerlogo" />
 
       <div>
         <section class="footer">
@@ -213,28 +142,13 @@
         </section>
         <section class="socials">
           <div>
-            <a href="https://www.facebook.com/login/"
-              ><img
-                src="https://www.svgrepo.com/show/503338/facebook.svg"
-                alt="Instagram logo"
-                class="socialLogos"
-            /></a>
+            <a href="https://www.facebook.com/login/"><img src="https://www.svgrepo.com/show/503338/facebook.svg" alt="Instagram logo" class="socialLogos" /></a>
           </div>
           <div>
-            <a href="https://www.instagram.com/"
-              ><img
-                src="https://www.svgrepo.com/show/512399/instagram-167.svg"
-                alt="Instagram logo"
-                class="socialLogos"
-            /></a>
+            <a href="https://www.instagram.com/"><img src="https://www.svgrepo.com/show/512399/instagram-167.svg" alt="Instagram logo" class="socialLogos" /></a>
           </div>
           <div>
-            <a href="https://www.tiktok.com/login"
-              ><img
-                src="https://www.svgrepo.com/show/473806/tiktok.svg"
-                alt="Instagram logo"
-                class="socialLogos"
-            /></a>
+            <a href="https://www.tiktok.com/login"><img src="https://www.svgrepo.com/show/473806/tiktok.svg" alt="Instagram logo" class="socialLogos" /></a>
           </div>
         </section>
       </div>
