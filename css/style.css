@@ -118,6 +118,9 @@ div .logo {
     ul {
       font-size: 1.5rem;
       list-style: none;
+      white-space: nowrap;
+      /* Is there a way to set a minimum gap, as once they sit propperly, I'd like them to sit much further apart, but not get too close when screen made narrow */
+      column-gap: 20px ;
       display: flex;
       flex-grow: 1;
       justify-content: space-between;
@@ -295,7 +298,6 @@ footer {
 
 .socials{
   display: grid;
-  border: 1px solid black;
   grid-template-columns: 1fr 1fr 1fr;
   width: 20%;
   align-items: center;
@@ -308,7 +310,11 @@ footer {
 }
 
 small {
-  display: block;
-  float: right;
-  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 20%;
+  align-items: right;
+  flex-direction: row;
+  float: cener;
+  white-space: nowrap;
 }
