@@ -26,6 +26,7 @@ header {
   flex-direction: row;
   width: 100%;
   background-color: lightgrey;
+  z-index: 1;
 }
 
  /* Need to use block to make a counter appear in top right */
@@ -259,6 +260,10 @@ img {
   justify-items: center;
   gap: 1rem;
 } */
+
+main {
+  min-height: 1000px;
+}
 
 .products {
   min-height: 1000px;
