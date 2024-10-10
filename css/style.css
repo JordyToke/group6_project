@@ -65,6 +65,7 @@ div .logo {
  .cartButton {
   display: block;
   flex-grow: 1;
+  float: right;
   height: 70px;
   width: 100px;
   border: 2px solid black;
@@ -108,17 +109,17 @@ div .logo {
   /* To do later: make a short sticky header-nav */
   nav {
     position: flex;
-    /* delete below border */
     width: 100%;
     background-color: var(--bg-light-acc1);
-    /* decide which margin needed */
     background-color: lightgrey;
     z-index: 2;
+    
      
     ul {
       font-size: 1.5rem;
       list-style: none;
       display: flex;
+      flex-grow: 1;
       justify-content: space-between;
       padding: 0px;
       margin: 0;
@@ -269,9 +270,7 @@ footer {
   width: auto; 
   position: relative;
   height: 90%;
-  vertical-align: center;
   float: left;
-  
 }
 
 .footer {
