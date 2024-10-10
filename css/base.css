@@ -22,7 +22,7 @@ body {
     --bg-light-acc1: #fff;
     --bg-dark-acc1: greenyellow;
     --bg-dark-acc2: #ab6;
-    --link-color: #9e9eff;
+    --link-color: #1e1e20;
   };
 }
 
@@ -34,7 +34,7 @@ body {
     --bg-light-acc1: #252530;
     --bg-dark-acc1: #151520;
     --bg-dark-acc2: #101015;
-    --link-color: #9e9eff;
+    --link-color: #131314;
   };
 
 }
