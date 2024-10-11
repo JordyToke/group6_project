@@ -268,8 +268,7 @@ main {
 .side-bar {
   height: 100%;
   position: relative;
-  width: 26vw;
-  min-width: 380px;
+  width: 380px;
   float: right;
   background-color: var(--bg-light-acc2);
 }
