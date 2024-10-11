@@ -331,6 +331,7 @@ input::-webkit-inner-spin-button {
 }
 
 .cart-total {
+  font-weight: 800;
   position: absolute;
   right: 0;
   bottom: 0;
