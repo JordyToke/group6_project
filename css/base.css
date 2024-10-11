@@ -12,15 +12,18 @@ body {
   box-sizing: border-box;
   color-scheme: dark light;
   font-family: Arial, Helvetica, sans-serif;
+  --button-color: rgb(255, 232, 134);
+  --bg-light-acc2: #e6e6e6;
 }
 
 @media (prefers-color-scheme: light) {
   /* light theme styles */
   :root {
     --text-color: #000;
-    --bg-color: #eee;
-    --bg-light-acc1: #fff;
-    --bg-dark-acc1: greenyellow;
+    --bg-color: #fff;
+    --bg-light-acc1: #b899d1;
+    --bg-dark-acc1: rgb(214, 190, 235);
+    
     --bg-dark-acc2: #ab6;
     --link-color: #1e1e20;
   };
@@ -29,10 +32,10 @@ body {
 @media (prefers-color-scheme: dark) {
   /* dark theme styles */
   :root {
-    --text-color: #888;
-    --bg-color: #202025;
-    --bg-light-acc1: #252530;
-    --bg-dark-acc1: #151520;
+    --text-color: #000;
+    --bg-color: #583858;
+    --bg-light-acc1: #b899d1;
+    --bg-dark-acc1: rgb(214, 190, 235);
     --bg-dark-acc2: #101015;
     --link-color: #131314;
   };

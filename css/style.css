@@ -17,6 +17,11 @@ body {
   background-color: var(--bg-color);
 }
 
+main {
+  height: 1000px;
+  background-color: var(--bg-color);
+}
+
 /* styling of the Header */
 header {
   display: flex;
@@ -25,7 +30,7 @@ header {
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
-  background-color: lightgrey;
+  background-color: var(--bg-light-acc1);
   z-index: 1;
 }
 
@@ -81,7 +86,7 @@ div .logo {
   vertical-align: middle;
   align-content: right;
   float: none; */
-  background-color: rgb(255, 232, 134);
+  background-color: var(--button-color);
     img {
       height: 60px;
       width: 60px;
@@ -107,10 +112,7 @@ div .logo {
     position: flex;
     width: 100%;
     background-color: var(--bg-light-acc1);
-    background-color: lightgrey;
     z-index: 2;
-    
-     
     ul {
       font-size: 1.5rem;
       list-style: none;
@@ -130,8 +132,6 @@ div .logo {
           color: var(--link-color);
           transition: all 150ms ease-in;
           &:hover {
-            /*      ADD TEAGANS STYLING TO BASE.CSS      */
-  /*           background-color: greenyellow; */
             background-color: var(--bg-dark-acc1);
           }
         }
@@ -162,12 +162,14 @@ img {
   justify-content: center;
   gap: 20px;
   padding: 5%;
+  background-color: var(--bg-color);
 }
 .product {
   /* border: 2px solid darkgray; */
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  background-color: white;
 }
 
 .product img {
@@ -197,8 +199,8 @@ img {
   padding: 0 15%;
 }
 .greenbtn {
-  background-color: rgb(42, 159, 42);
-
+  background-color: var(--button-color);
+  color: black;
   width: 100%;
   height: 100%;
   font-size: 1.2em;
@@ -209,7 +211,7 @@ img {
   border: none;
 }
 .greenbtn:hover {
-  background-color: greenyellow;
+  background-color: hsl(from var(--button-color) h s calc(l + 10));
 }
 @media only screen and (max-width: 768px) {
   .product_listing {
@@ -264,11 +266,12 @@ main {
 }
 
 .side-bar {
+  height: 100%;
   position: relative;
   width: 26vw;
   min-width: 380px;
   float: right;
-  background-color: var(--bg-light-acc1);
+  background-color: var(--bg-light-acc2);
 }
 
 .cart-list {
@@ -303,11 +306,12 @@ input::-webkit-inner-spin-button {
   align-items: center;
   gap: 0.5em;
   height: 6em;
-  &:nth-child(2n) {
+  &:nth-child(2n + 1) {
     /* alternating cart item style */
-    background-color: hsl(from var(--bg-light-acc1) h s calc(l + 5));
+    background-color: hsl(from var(--bg-light-acc2) h s calc(l + 5));
   }
   input {
+    color: black;
     cursor: pointer;
     flex-shrink: 0;
     appearance: none;
@@ -320,13 +324,17 @@ input::-webkit-inner-spin-button {
     background: none;
     text-align: center;
     &[type=button] {
-      background-color: var(--bg-light-acc1);
+      background-color: var(--bg-dark-acc1);
       border-radius: 50%;
     }
   }
 }
 
 .cart-total {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: right;
@@ -378,7 +386,7 @@ input::-webkit-inner-spin-button {
 footer {
   display: inline-block;
   vertical-align: center;
-  background-color: lightgrey;
+  background-color: var(--bg-light-acc1);
   height: 190px;
   width: 100%;
   padding-top: 25px;
